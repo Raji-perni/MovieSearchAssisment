@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+#moviesList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.movie {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#pagination {
+    margin-top: 1em;
+    text-align: center;
+}
+
+#pagination button {
+    margin: 0 0.5em;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#pagination button:hover {
+    background-color: #555;
+}
